@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:background="@drawable/app_main_gradient"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/custom_font"
+        android:text="@string/str_instagram"
+        android:textColor="#ffffff"
+        android:textSize="30sp"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/str_email"
+        android:textColorHint="#90ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_rounded_corner"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/str_password"
+        android:textColorHint="#90ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:background="@drawable/view_rounded_corner"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btn_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:backgroundTint="@null"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:text="@string/str_signin"
+        android:background="@drawable/view_rounded_corner"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_donnot_account"
+            android:textSize="14sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_signup"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>
